@@ -1,24 +1,43 @@
-<p>
-  <label>Pounds</label>
-  <input id="inputPounds" type="number" placeholder="Pounds"
-  oninput="weightConverter(this.value)" onchange="weightConverter(this.value)">
-</p>
-<p>Kilograms: <span id="outputKilograms"></span></p>
-/* When the input field receives input, convert the value from pounds to kilograms */
-function weightConverter(valNum) {
-  document.getElementById("outputKilograms").innerHTML = valNum / 0.0022046;
-}
+<style>
+  span {
+      color: Green;
+  }
+</style>
 
-<!--output field-->
+<!-- Title of your Converter -->
+<h2 style="color: Green;">Weight Converter</h2>
+
+<p>Enter a value in the Kilograms field to convert :</p>
+
+
+
+<p>
+  <!-- label the input field -->
+  <label>Kilograms</label>
+  <!-- input tag for enter the data -->
+  <!-- kiloweightConvert function call
+       function kiloweightConvert to evaluate value-->
+  <input id="Kilograms" type="number" placeholder="kilograms" 
+         oninput="kiloweightConvert(this.value)" 
+         onchange="kiloweightConvert(this.value)" />
+</p>
+
+<!-- output field-->
 <p>Pounds: <span id="Pounds"></span></p>
 <p>Ounces: <span id="Ounces"></span></p>
 <p>Grams: <span id="Grams"></span></p>
 <p>Stones: <span id="Stones"></span></p>
 
-  //function that evaluate the value and returns result
-    function kiloweightConvert(value) {
-      document.getElementById("Pounds").innerHTML=value*2.2046;
-      document.getElementById("Ounces").innerHTML=value*35.274;
-      document.getElementById("Grams").innerHTML=value*1000;
-      document.getElementById("Stones").innerHTML=value*0.1574;
-    }
+<script>
+  //function that evaluates the weight and return result
+         function kiloweightConvert(value) {
+             document.getElementById("Pounds").innerHTML =
+               value * 2.2046;
+             document.getElementById("Ounces").innerHTML =
+               value * 35.274;
+             document.getElementById("Grams").innerHTML =
+               value * 1000;
+             document.getElementById("Stones").innerHTML =
+               value * 0.1574;
+         }
+</script>
