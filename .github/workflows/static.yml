@@ -1,0 +1,4 @@
+function convertPoundsToKilograms(pounds)
+function takes in pounds
+var kilograms = pounds * 0.453592
+return kilograms
