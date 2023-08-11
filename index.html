@@ -3,7 +3,7 @@
   <input id="inputPounds" type="number" placeholder="Pounds"
   oninput="weightConverter(this.value)" onchange="weightConverter(this.value)">
 </p>
-<p>Kilograms: <span id="outputGrams"></span></p>
+<p>Kilograms: <span id="outputKilograms"></span></p>
 /* When the input field receives input, convert the value from pounds to kilograms */
 function weightConverter(valNum) {
   document.getElementById("outputKilograms").innerHTML = valNum / 0.0022046;
