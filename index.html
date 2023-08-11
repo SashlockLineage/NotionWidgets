@@ -1,4 +1,14 @@
-function convertPoundsToKilograms(pounds)
-function takes in pounds
-var kilograms = pounds * 0.453592
-return kilograms
+import java.io.*;
+import java.util.*;
+
+class PoundsTokg{
+  public static void main (String[] args)throws Exception{
+  //1 Pounds = 0.45 Kg;
+  BufferedReader bf = new BufferedReader(new 
+  InputStreamReader(System.in));
+  System.out.println("Enter the Pounds:");
+  int pound = Integer.parseInt(bf.readLine());
+  double kilo = pound * 0.45;
+  System.out.println("Kilo: " + kilo);
+  }
+}
